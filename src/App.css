@@ -1,38 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    /* border: 20px solid rgb(255, 255, 255);
+    border-radius: 10px;  */
+    overflow: hidden;
 }
 
 .App-header {
-  background-color: #282c34;
+  /* width: 25vw; */
+  height: 100vh;
+  box-shadow: -5px 0 20px 2px #fff;
+  background-image: linear-gradient(181deg, #040000 0%, #1e0931 33%, #032130 66%, #a95b85 100%);
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  min-width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: top;
+  font-size: 60px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* .App-header h1:hover {
+  color: rgb(0, 238, 255);
+  text-shadow: rgb(255, 255, 255)  -12px -5px  15px;
+} */
+
+
+h1 {
+  text-shadow:rgb(16, 132, 234)  -12px -5px  15px;
+}
+.inputText{
+  /* flex: 1; */
+  border-radius: 20px;
+  padding: 15px 15px;
+  font-size: 40px;
+  font-weight: 300;
+  font-family: cursive;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3);
+  margin: 10px;
+  background: transparent;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.inputText:hover {
+  box-shadow: -12px -12px 1px  rgba(247, 246, 225, 0.7);
+  opacity: 0.4;
+}
+
+.btn {
+  padding: 15px 10px;
+  border-radius: 20px;
+  /* border: none; */
+  outline: none;
+  font-size: 40px;
+  font-weight: 300;
+  font-family: cursive;
+  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3);
+  color: rgb(0, 0, 0);
+  background: transparent;
+  /* border:#fff; */
+}
+
+.btn:hover {
+  background: #000000;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 5px #ffffff,
+                0 0 25px #ffffff,
+                0 0 50px #ffffff,
+                0 0 100px #ffffff;
+  outline: none;
+  color: aqua;
+}
+
+.container {
+  border: 2px solid black;
+  position: relative;
+  font-size: 50px;
+  font-weight: 500;
+  width: 810px;
+  height: 620px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40%;
+  background: white;
+  color: rgb(18, 21, 103);
+  z-index: 3;
+  opacity:0.5;
+  margin-top: 15px;
+  
+  border: none;
+  /* box-shadow: 12px 12px 5px 1px rgba(255, 255, 255, 0.7); */
+  overflow: hidden;
+  font-family:cursive;
+}
+
+.container:hover {
+  box-shadow: 12px -12px 1px  rgba(231, 216, 8, 0.7);
+  opacity: 0.7;
+} 
+
+svg {
+  position: absolute;
+  left:0;
+  bottom: 0;
+  top: 600px;
+  width: 130%;
+  animation: drift 5s  linear infinite;
+}
+
+.svg1 {
+  position: absolute;
+  left:140px;
+  bottom: 0;
+  top: 600px;
+  width: 130%;
+  animation: combo 5s  linear infinite ;
+  transition: smooth;
+  z-index: 1;
+}
+
+.svg3 {
+  position: absolute;
+  left:0;
+  bottom: 0;
+  top: 620px;
+  width: 140%;
+  animation: animate 3s  linear alternate infinite;
+  transition: smooth;
+  /* z-index: 2; */
+  color: white;
+}
+
+
+@keyframes drift {
+  0%{
+      transform: translateX(-1px);
   }
-  to {
-    transform: rotate(360deg);
+  100%{
+      transform: translateX(-100px);
+  }
+}
+
+
+@keyframes combo {
+  150%{
+      transform: translateX(1px);
+      
+  }
+  0%{
+    transform: translateX(80px);
+  }
+}
+
+@keyframes animate {
+  0%{
+      transform: translateX(10px);
+  }
+  100%{
+    transform: translateX(80px);
   }
 }

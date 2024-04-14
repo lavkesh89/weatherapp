@@ -1,3 +1,28 @@
+# weatherapp
+Weather App is the application of science and technology to predict the conditions of the atmosphere for a given location and time.weather refers to short-term changes in the atmosphere, climate describes what the weather is like over a long period of time in a specific area.
+
+The application allows users to get information on various cities in real time. With the help of API, we are fetching the weather details of the city which is been searched by the user. The application is completely responsive and the response in terms of the output is also given in a quick time.
+
+![Screenshot 2024-04-14 172223](https://github.com/lavkesh89/weatherapp/assets/131283151/e3c7d02c-c396-4f4d-8566-3cc9a88b7014)
+
+
+
+
+Video
+
+https://github.com/lavkesh89/weatherapp/assets/131283151/00d25868-c65b-4285-9e21-d567c05cfcec
+
+
+
+https://github.com/lavkesh89/weatherapp/assets/131283151/78e33930-8617-4d29-8586-2619f453a59c
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
